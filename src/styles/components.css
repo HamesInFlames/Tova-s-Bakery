@@ -1,0 +1,109 @@
+/* Component-level styles that need keyframes / pseudo-elements Tailwind can't
+   express cleanly. Layout + color come from Tailwind utilities + tokens.css. */
+
+/* ─── Kosher marquee (KosherBanner) ─────────────────────────────────────── */
+@keyframes tova-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee__track {
+  display: inline-flex;
+  align-items: center;
+  will-change: transform;
+  animation: tova-marquee 34s linear infinite;
+}
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+    transform: translateX(0);
+  }
+}
+
+/* ─── Single-page presentation ──────────────────────────────────────────── */
+/* Offset anchored sections so the sticky nav doesn't cover their headings. */
+section[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+/* Gentle scroll cue in the hero. */
+@keyframes tova-bob {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+.scroll-cue {
+  animation: tova-bob 2.2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue { animation: none; }
+}
+
+/* Hide scrollbars on swipeable strips while keeping them scrollable. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── Product rails (auto-scrolling Range showcase) ─────────────────────── */
+@keyframes tova-rail {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.rail {
+  overflow: hidden;
+}
+.rail__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: tova-rail linear infinite;
+}
+.rail__track--reverse {
+  animation-direction: reverse;
+}
+/* Pause when the visitor hovers or keyboard-focuses a card, so they can look. */
+.rail:hover .rail__track,
+.rail__track:focus-within {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rail {
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+  .rail__track {
+    animation: none;
+  }
+}
+/* Skip rendering + animating off-screen rails until the visitor scrolls near
+   them — keeps the long Range section cheap and the rest of the page fast. */
+.rail-row {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 360px;
+}
+
+/* ─── Variant list dot-leader (no prices — leader fills to the chevron) ──── */
+.variant-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.55rem 0.25rem;
+  border-bottom: 1px solid var(--color-rule);
+  transition: color var(--transition);
+}
+.variant-row__leader {
+  border-bottom: 1px dotted var(--color-border);
+  transform: translateY(-0.2em);
+}

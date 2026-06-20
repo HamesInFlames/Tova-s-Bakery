@@ -1,0 +1,1298 @@
+{
+  "$meta": {
+    "source": "tovasbakery.com (GoDaddy Website Builder)",
+    "capturedOn": "2026-06-19",
+    "method": "Static-HTML crawl + per-page verification of all 12 pages (5 static + 7 category).",
+    "provenance": "Page copy, headings, certifications, contact details, nav, and the Grodzinski cross-link are verbatim from the live server-rendered HTML. Product CAROUSEL images and the FULL per-section variant lists are JavaScript lazy-loaded and are NOT in the static HTML — only the first visible carousel slide per section was captured. Complete variant lists + placeholder product images are to be filled by the approved rendered-browser (Chrome) pass.",
+    "warnings": [
+      "ABOUT hero image is GoDaddy STOCK (//img1.wsimg.com/isteam/stock/104680...) — do NOT reuse. Replace with real photography from Chris.",
+      "Original site contains typos, corrected here and preserved for reference: 'Red Valvet'->'Red Velvet', 'Apple Rasberry GLUTEN FREE'->'Apple Raspberry (gluten-free)', 'Rasberry GLUTEN FREE'->'Raspberry (gluten-free)'.",
+      "Footer copyright on the live site still reads 'Copyright (c) 2018' — stale; use the current year in the rebuild.",
+      "Live category URLs use URL-encoded pipes (e.g. /muffin-%7C-loaf-cake-%7C-pie-1). The rebuild uses clean /products/<slug> paths; 'livePath' preserves the original for 301 redirects.",
+      "No email address is published anywhere on the live site (contact is phone + form only).",
+      "Variant lists + product images completed via render-crawl on 2026-06-19. Product images are live GoDaddy URLs used as PLACEHOLDERS; download + convert to WebP and replace with Chris's real photography before launch."
+    ]
+  },
+  "site": {
+    "name": "Tova's Bakery",
+    "domain": "tovasbakery.com",
+    "founded": 1999,
+    "tagline": "The flavour that's always been there.",
+    "shortDescription": "Kosher, nut-free, COR-certified wholesale & retail bakery — Eastern European baked goods and traditional challah, since 1999.",
+    "certifications": [
+      "NUT FREE",
+      "COR Certified"
+    ],
+    "certBanner": "NUT FREE · COR Certified",
+    "social": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/tovas.bakery.toronto"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/tovas_bakery"
+      }
+    ],
+    "contact": {
+      "phone": "(905) 881-2861",
+      "phoneHref": "tel:9058812861",
+      "email": null,
+      "address": "350 John Street, Markham, Ontario L3T 5W6, Canada",
+      "hoursNote": "Call early in the morning to place your order and we'll have it hot and ready by the time you arrive."
+    },
+    "crossLink": {
+      "label": "Visit Grodzinski North",
+      "url": "https://www.grodzinskinorthbakery.com",
+      "note": "Sister bakery (also owned by Chris). Permanent bottom-right cross-promotion button — preserved from the live site, normalized from the malformed 'http://Www.grodzinskinorthbakery.com'."
+    },
+    "logo": {
+      "liveUrl": "https://img1.wsimg.com/isteam/ip/a0f05f19-563a-447a-b219-f1cd2df8c889/5630ebaf-4430-42b1-892d-5c466287c0fd.jpeg",
+      "isStock": false,
+      "note": "Current GoDaddy-hosted logo (real upload, served at h:104). Re-export at full resolution for the rebuild.",
+      "local": "/images/brand/logo.webp"
+    }
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "About Us",
+      "path": "/about-us"
+    },
+    {
+      "label": "Our Labels",
+      "path": "/our-labels"
+    },
+    {
+      "label": "Our Products",
+      "path": "/products",
+      "children": [
+        {
+          "label": "Breads",
+          "path": "/products/breads"
+        },
+        {
+          "label": "Danishes",
+          "path": "/products/danishes"
+        },
+        {
+          "label": "Muffin | Loaf Cake | Pie",
+          "path": "/products/muffins-loaf-pie"
+        },
+        {
+          "label": "Cookies | Snack Pastries",
+          "path": "/products/cookies-snack-pastries"
+        },
+        {
+          "label": "Classic Pastries",
+          "path": "/products/classic-pastries"
+        },
+        {
+          "label": "Babka | Rogalach",
+          "path": "/products/babka-rogalach"
+        },
+        {
+          "label": "Cakes | Personal Desserts",
+          "path": "/products/cakes-desserts"
+        }
+      ]
+    },
+    {
+      "label": "Wholesale Catalog",
+      "path": "/wholesale-catalog"
+    },
+    {
+      "label": "Contact Us",
+      "path": "/contact-us"
+    }
+  ],
+  "labels": [
+    {
+      "slug": "parve",
+      "name": "Parve",
+      "badgeImage": null
+    },
+    {
+      "slug": "dairy",
+      "name": "Dairy",
+      "badgeImage": null
+    },
+    {
+      "slug": "gluten-free",
+      "name": "Gluten Free",
+      "badgeImage": null
+    },
+    {
+      "slug": "sugar-free",
+      "name": "Sugar Free",
+      "badgeImage": null
+    },
+    {
+      "slug": "nut-free",
+      "name": "Nut Free",
+      "badgeImage": null
+    },
+    {
+      "slug": "cor",
+      "name": "COR Certified Kosher",
+      "badgeImage": null
+    }
+  ],
+  "pages": {
+    "home": {
+      "path": "/",
+      "livePath": "/",
+      "title": "Tova's Bakery — Kosher, Nut-Free, COR-Certified Bakery in Markham",
+      "metaDescription": "Tova's Bakery: kosher, nut-free, COR-certified wholesale & retail bakery in Markham, Ontario. Traditional challah and Eastern European baked goods since 1999.",
+      "hero": {
+        "note": "The live home page is a sparse JS shell — no hero headline or body copy exists in the source. Copy below is PROPOSED fresh copy for the rebuild (to confirm with Chris), grounded in the real About-page voice.",
+        "headline": "The flavour that's always been there.",
+        "subhead": "Kosher, nut-free and COR-certified — traditional challah and Eastern European baked goods, baked fresh in Markham since 1999.",
+        "primaryCta": {
+          "label": "Wholesale Inquiry",
+          "path": "/contact-us"
+        },
+        "secondaryCta": {
+          "label": "Browse Our Products",
+          "path": "/products"
+        }
+      },
+      "sectionsFromLive": [
+        "NUT FREE COR Certified",
+        "Click Here For Grodzinski North"
+      ]
+    },
+    "about": {
+      "path": "/about-us",
+      "livePath": "/about-us",
+      "title": "About Us — Tova's Bakery",
+      "metaDescription": "Since 1999, Tova's Bakery has served the community with traditional challah and Eastern European baked goods. Kosher, nut-free, COR-certified.",
+      "heading": "Who We Are",
+      "tagline": "Since 1999, our flavour has spoken for us — on your table, in your celebrations, and in your everyday moments.",
+      "body": [
+        "Since 1999, our flavour has spoken for us on your table, in your celebrations, and in your everyday moments. Like those family recipes everyone loves but no one really knows where they come from, our tradition has always been part of your story. After all this time, we're finally sharing the secret: we didn't change Grandpa's recipe; we simply cared for it and gave it a name. Tova's, the flavour that's always been there.",
+        "Today, Tova's is a well-established wholesale and retail bakery specializing in Eastern European baked goods and traditional challah. Since 1999, we've been proudly serving our community and continually responding to the needs of our customers."
+      ],
+      "images": [
+        {
+          "liveUrl": "//img1.wsimg.com/isteam/stock/104680/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:300,cg:true",
+          "alt": "Baking ingredients including eggs, flour, butter, and milk on a wooden table.",
+          "isStock": true,
+          "role": "hero",
+          "action": "DO NOT REUSE — GoDaddy stock. Replace with a real Tova's photo."
+        }
+      ]
+    },
+    "labels": {
+      "path": "/our-labels",
+      "livePath": "/our-labels",
+      "title": "Our Labels — Tova's Bakery",
+      "metaDescription": "Clear product labelling at Tova's Bakery: Parve, Dairy, Gluten-Free, and Sugar-Free items, all nut-free and COR-certified kosher.",
+      "heading": "Clear Labels for Dairy, Gluten-Free, Sugar-Free & Parve Items",
+      "body": [
+        "Every product is clearly labelled so you always know what you're getting. All of our baking is nut-free and COR-certified kosher."
+      ],
+      "labelBadges": [
+        {
+          "label": "PARVE",
+          "liveImage": "//img1.wsimg.com/isteam/ip/a0f05f19-563a-447a-b219-f1cd2df8c889/13.png"
+        },
+        {
+          "label": "DAIRY",
+          "liveImage": "//img1.wsimg.com/isteam/ip/a0f05f19-563a-447a-b219-f1cd2df8c889/14.png"
+        },
+        {
+          "label": "GLUTEN FREE",
+          "liveImage": "//img1.wsimg.com/isteam/ip/a0f05f19-563a-447a-b219-f1cd2df8c889/16.png"
+        },
+        {
+          "label": "SUGAR FREE",
+          "liveImage": "//img1.wsimg.com/isteam/ip/a0f05f19-563a-447a-b219-f1cd2df8c889/17.png"
+        },
+        {
+          "label": "NUT FREE",
+          "liveImage": "//img1.wsimg.com/isteam/ip/a0f05f19-563a-447a-b219-f1cd2df8c889/18.png"
+        },
+        {
+          "label": "COR",
+          "liveImage": "//img1.wsimg.com/isteam/ip/a0f05f19-563a-447a-b219-f1cd2df8c889/19.png"
+        }
+      ],
+      "note": "All 6 badge PNGs are real uploads (/isteam/ip/) — safe to re-export and reuse. Label-to-image mapping is inferred; confirm during render-crawl."
+    },
+    "wholesale": {
+      "path": "/wholesale-catalog",
+      "livePath": "/wholesale-catalog",
+      "title": "Wholesale Catalog — Tova's Bakery",
+      "metaDescription": "Premium kosher baked goods, retail-ready and COR-certified, from Tova's Bakery. Wholesale challah, babka, cookies, pastries, cakes and desserts for your shelves.",
+      "tagline": "Premium kosher baked goods — retail-ready, COR-certified, fresh from Tova's Bakery.",
+      "isConversionPage": true,
+      "sections": [
+        {
+          "heading": "Breads & Challah",
+          "body": "Freshly baked challah, rye, marble, and seeded loaves — sliced, bagged, and labeled for the shelf. Available whole or pre-sliced.",
+          "poster": "/images/video-posters/breads-and-challah.webp",
+          "video": "https://img1.wsimg.com/blobby/go/a0f05f19-563a-447a-b219-f1cd2df8c889/video/Tovas_01_Breads_and_Challah.mp4"
+        },
+        {
+          "heading": "Babka & Bagged Loaves",
+          "body": "Hand-rolled chocolate, cinnamon, and seasonal babka, individually wrapped with branded packaging and nutrition labeling.",
+          "poster": "/images/video-posters/babka-and-bagged-loaves.webp",
+          "video": "https://img1.wsimg.com/blobby/go/a0f05f19-563a-447a-b219-f1cd2df8c889/video/Tovas_02_Babka_and_Bagged.mp4"
+        },
+        {
+          "heading": "Cookies & Biscotti",
+          "body": "A wide assortment of cookie varieties — biscotti, sandwich cookies, sprinkle bites, gluten-free options, and more — in retail clamshells with full nutrition labels.",
+          "poster": "/images/video-posters/cookies-and-biscotti.webp",
+          "video": "https://img1.wsimg.com/blobby/go/a0f05f19-563a-447a-b219-f1cd2df8c889/video/Tovas_03_Cookies_and_Biscotti.mp4"
+        },
+        {
+          "heading": "Sweet Pastries & Treats",
+          "body": "Rugelach, croissants, scones, and decorated cookies — perfect for in-store bakery cases and impulse-buy displays.",
+          "poster": "/images/video-posters/sweet-pastries-and-treats.webp",
+          "video": "https://img1.wsimg.com/blobby/go/a0f05f19-563a-447a-b219-f1cd2df8c889/video/Tovas_04_Sweet_Pastries.mp4"
+        },
+        {
+          "heading": "Cakes & Desserts",
+          "body": "Marble cakes, cupcakes, layered slices, and premium dessert cups (tiramisu, cookies & cream, mousse) — individually portioned in branded clamshells.",
+          "poster": "/images/video-posters/cakes-and-desserts.webp",
+          "video": "https://img1.wsimg.com/blobby/go/a0f05f19-563a-447a-b219-f1cd2df8c889/video/Tovas_05_Cakes_and_Desserts.mp4"
+        }
+      ],
+      "cta": {
+        "label": "Request Wholesale Pricing",
+        "path": "/contact-us"
+      },
+      "showcaseVideo": {
+        "src": "https://img1.wsimg.com/blobby/go/a0f05f19-563a-447a-b219-f1cd2df8c889/video/Tovas_Wholesale_Showcase.mp4",
+        "poster": "/images/video-posters/showcase.webp"
+      }
+    },
+    "contact": {
+      "path": "/contact-us",
+      "livePath": "/contact-us",
+      "title": "Contact Us — Tova's Bakery",
+      "metaDescription": "Contact Tova's Bakery in Markham, Ontario for wholesale and retail orders. Call (905) 881-2861 or send us a message.",
+      "heading": "Better yet, see us in person!",
+      "intro": "We love our customers, so feel free to visit during normal business hours.",
+      "location": {
+        "name": "Tova's Bakery",
+        "address": "350 John Street, Markham, Ontario L3T 5W6, Canada",
+        "phone": "(905) 881-2861",
+        "phoneHref": "tel:9058812861",
+        "hoursNote": "Call early in the morning to place your order and we'll have it hot and ready by the time you arrive."
+      },
+      "form": {
+        "heading": "Drop us a line!",
+        "deliverTo": "Tova's inbox via Web3Forms relay (register a new access key for Tova's email).",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "label": "Phone",
+            "type": "tel",
+            "required": false
+          },
+          {
+            "name": "enquiryType",
+            "label": "Inquiry type",
+            "type": "select",
+            "required": false,
+            "options": [
+              "Wholesale",
+              "Retail / Pickup",
+              "Catering / Event",
+              "General"
+            ]
+          },
+          {
+            "name": "message",
+            "label": "Message",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "note": "Live form has only Name + Email (Email required) + reCAPTCHA. Rebuild form is expanded toward the wholesale-inquiry conversion goal; honeypot anti-spam instead of reCAPTCHA (matches Grodzinski)."
+      }
+    }
+  },
+  "categories": [
+    {
+      "slug": "breads",
+      "path": "/products/breads",
+      "livePath": "/breads",
+      "title": "Breads",
+      "certBanner": "NUT FREE · COR Certified",
+      "intro": null,
+      "variantsComplete": true,
+      "sections": [
+        {
+          "heading": "Sourdough",
+          "assortedImage": "/images/products/breads/sourdough-plain.webp",
+          "items": [
+            {
+              "name": "Plain",
+              "tags": [],
+              "image": "/images/products/breads/sourdough-plain.webp",
+              "sourceName": "Sourdough Plain"
+            },
+            {
+              "name": "Multigrain",
+              "tags": [],
+              "image": "/images/products/breads/sourdough-multigrain.webp",
+              "sourceName": "Sourdough Multigrain"
+            },
+            {
+              "name": "Olives",
+              "tags": [],
+              "image": "/images/products/breads/sourdough-olives.webp",
+              "sourceName": "Sourdough Olives"
+            }
+          ]
+        },
+        {
+          "heading": "Challah",
+          "assortedImage": "/images/products/breads/challah-plain.webp",
+          "items": [
+            {
+              "name": "Plain",
+              "tags": [],
+              "image": "/images/products/breads/challah-plain.webp",
+              "sourceName": "Challah Plain"
+            },
+            {
+              "name": "Sesame",
+              "tags": [],
+              "image": "/images/products/breads/challah-sesame.webp",
+              "sourceName": "Challah Seseme"
+            },
+            {
+              "name": "Raisin",
+              "tags": [],
+              "image": "/images/products/breads/challah-raisin.webp",
+              "sourceName": "Challah Raison"
+            }
+          ]
+        },
+        {
+          "heading": "Bilkas",
+          "assortedImage": "/images/products/breads/bilkas-plain.webp",
+          "items": [
+            {
+              "name": "Plain",
+              "tags": [],
+              "image": "/images/products/breads/bilkas-plain.webp",
+              "sourceName": "Bilka Plain"
+            },
+            {
+              "name": "Sesame",
+              "tags": [],
+              "image": "/images/products/breads/bilkas-sesame.webp",
+              "sourceName": "Bilka Seseme"
+            },
+            {
+              "name": "Streusel",
+              "tags": [],
+              "image": "/images/products/breads/bilkas-streusel.webp",
+              "sourceName": "Bilka Strusel"
+            },
+            {
+              "name": "Bilka",
+              "tags": [],
+              "image": "/images/products/breads/bilkas-bilka.webp",
+              "sourceName": "Bilkas"
+            }
+          ]
+        }
+      ],
+      "imageSource": "render-crawl 2026-06-19 (live GoDaddy carousels) — placeholder photos, replace with Chris's photography"
+    },
+    {
+      "slug": "danishes",
+      "path": "/products/danishes",
+      "livePath": "/danishes-1",
+      "title": "Danishes",
+      "certBanner": "NUT FREE · COR Certified",
+      "intro": "Discover our delicious Danishes — Danish cakes, Danish rolls, and frozen Danishes, all crafted for your enjoyment.",
+      "variantsComplete": true,
+      "sections": [
+        {
+          "heading": "Danish Cakes",
+          "assortedImage": "/images/products/danishes/danish-cakes-chocolate.webp",
+          "items": [
+            {
+              "name": "Chocolate",
+              "tags": [],
+              "image": "/images/products/danishes/danish-cakes-chocolate.webp",
+              "sourceName": "Danish Cake Chocolate"
+            },
+            {
+              "name": "Apple",
+              "tags": [],
+              "image": "/images/products/danishes/danish-cakes-apple.webp",
+              "sourceName": "Danish Cake Apple"
+            },
+            {
+              "name": "Cherry",
+              "tags": [],
+              "image": "/images/products/danishes/danish-cakes-cherry.webp",
+              "sourceName": "Danish Cake Cherry"
+            },
+            {
+              "name": "Poppy Seed",
+              "tags": [],
+              "image": "/images/products/danishes/danish-cakes-poppy-seed.webp",
+              "sourceName": "Danish Cake Poppyseeds"
+            },
+            {
+              "name": "Cinnamon",
+              "tags": [],
+              "image": "/images/products/danishes/danish-cakes-cinnamon.webp",
+              "sourceName": "Danish Cake Cinnamon"
+            }
+          ]
+        },
+        {
+          "heading": "Danish Rolls 6pc",
+          "assortedImage": "/images/products/danishes/danish-rolls-6pc-apple.webp",
+          "items": [
+            {
+              "name": "Apple",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-apple.webp",
+              "sourceName": "Danish Rolls Apple 6pc"
+            },
+            {
+              "name": "Cherry",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-cherry.webp",
+              "sourceName": "Danish Rolls Cherry 6pc"
+            },
+            {
+              "name": "Chocolate",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-chocolate.webp",
+              "sourceName": "Danish Rolls Chocolate 6pc"
+            },
+            {
+              "name": "Caramel",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-caramel.webp",
+              "sourceName": "Danish Rolls Caramel 6pc"
+            },
+            {
+              "name": "Poppy Seed",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-poppy-seed.webp",
+              "sourceName": "Danish Rolls Poppyseeds 6pc"
+            },
+            {
+              "name": "Strawberry",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-strawberry.webp",
+              "sourceName": "Danish Rolls Strawberry 6pc"
+            },
+            {
+              "name": "Blueberry",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-blueberry.webp",
+              "sourceName": "Danish Rolls Blueberry 6pc"
+            },
+            {
+              "name": "Cinnamon",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-cinnamon.webp",
+              "sourceName": "Danish Rolls Cinnamon 6pc"
+            },
+            {
+              "name": "Cheese Danish",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-6pc-cheese-danish.webp",
+              "sourceName": "Cheese Danish 6pc"
+            }
+          ]
+        },
+        {
+          "heading": "Danish Rolls 4pc",
+          "assortedImage": "/images/products/danishes/danish-rolls-4pc-apple.webp",
+          "items": [
+            {
+              "name": "Apple",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-4pc-apple.webp",
+              "sourceName": "Danish Rolls Apple 4pc"
+            },
+            {
+              "name": "Cherry",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-4pc-cherry.webp",
+              "sourceName": "Danish Rolls Cherry 4pc"
+            },
+            {
+              "name": "Chocolate",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-4pc-chocolate.webp",
+              "sourceName": "Danish Rolls Chocolate 4pc"
+            },
+            {
+              "name": "Cinnamon Raisin",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-4pc-cinnamon-raisin.webp",
+              "sourceName": "Danish Rolls Cinnamon Raison 4pc"
+            },
+            {
+              "name": "Poppy Seed",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-4pc-poppy-seed.webp",
+              "sourceName": "Danish Rolls Poppyseeds 4pc"
+            },
+            {
+              "name": "Blueberry",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-4pc-blueberry.webp",
+              "sourceName": "Danish Rolls Blueberry 4pc"
+            },
+            {
+              "name": "Strawberry",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-4pc-strawberry.webp",
+              "sourceName": "Danish Rolls Strawberry 4pc"
+            },
+            {
+              "name": "Cheese Danish",
+              "tags": [],
+              "image": "/images/products/danishes/danish-rolls-4pc-cheese-danish.webp",
+              "sourceName": "Cheese Danish 4pc"
+            }
+          ]
+        },
+        {
+          "heading": "Frozen Danishes",
+          "assortedImage": "/images/products/danishes/frozen-danishes-assorted-1.webp",
+          "items": [
+            {
+              "name": "Assorted 1",
+              "tags": [],
+              "image": "/images/products/danishes/frozen-danishes-assorted-1.webp",
+              "sourceName": "6f8af179-bc14-4c0a-b71f-69b7510c0454"
+            },
+            {
+              "name": "Assorted 2",
+              "tags": [],
+              "image": "/images/products/danishes/frozen-danishes-assorted-2.webp",
+              "sourceName": "aa247f35-1170-454c-b918-fd5be97ca59d"
+            },
+            {
+              "name": "Assorted 3",
+              "tags": [],
+              "image": "/images/products/danishes/frozen-danishes-assorted-3.webp",
+              "sourceName": "d7214126-7511-41b8-a8a8-f8f205d6389c"
+            },
+            {
+              "name": "Assorted 4",
+              "tags": [],
+              "image": "/images/products/danishes/frozen-danishes-assorted-4.webp",
+              "sourceName": "65924b47-cd18-4e89-9f40-70552a36bbf0"
+            },
+            {
+              "name": "Assorted 5",
+              "tags": [],
+              "image": "/images/products/danishes/frozen-danishes-assorted-5.webp",
+              "sourceName": "3d3b6b09-5951-4625-be2d-a75e856422a0"
+            },
+            {
+              "name": "Assorted 6",
+              "tags": [],
+              "image": "/images/products/danishes/frozen-danishes-assorted-6.webp",
+              "sourceName": "7eb23eeb-a4dc-43e2-9aab-7d14e36e6d6a"
+            },
+            {
+              "name": "Assorted 7",
+              "tags": [],
+              "image": "/images/products/danishes/frozen-danishes-assorted-7.webp",
+              "sourceName": "968bb48b-b573-4355-a9e7-c9dc2250ac5c"
+            },
+            {
+              "name": "Assorted 8",
+              "tags": [],
+              "image": "/images/products/danishes/frozen-danishes-assorted-8.webp",
+              "sourceName": "6d821ca7-3a81-440c-a3e0-f4ecebd82a6e"
+            }
+          ],
+          "note": "Live filenames are UUIDs (no variant names) — labels are placeholders; confirm the real lineup with Chris."
+        }
+      ],
+      "imageSource": "render-crawl 2026-06-19 (live GoDaddy carousels) — placeholder photos, replace with Chris's photography"
+    },
+    {
+      "slug": "muffins-loaf-pie",
+      "path": "/products/muffins-loaf-pie",
+      "livePath": "/muffin-%7C-loaf-cake-%7C-pie-1",
+      "title": "Muffin | Loaf Cake | Pie",
+      "certBanner": "NUT FREE · COR Certified",
+      "intro": null,
+      "variantsComplete": true,
+      "sections": [
+        {
+          "heading": "Muffins",
+          "assortedImage": "/images/products/muffins-loaf-pie/muffins-carrot.webp",
+          "items": [
+            {
+              "name": "Carrot",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/muffins-carrot.webp",
+              "sourceName": "Muffin Carrot"
+            },
+            {
+              "name": "Vanilla",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/muffins-vanilla.webp",
+              "sourceName": "Muffin Vanilla"
+            },
+            {
+              "name": "Red Velvet",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/muffins-red-velvet.webp",
+              "sourceName": "Muffin Red Valvet"
+            },
+            {
+              "name": "Chocolate Chip",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/muffins-chocolate-chip.webp",
+              "sourceName": "Muffin Chocolate Chip"
+            }
+          ]
+        },
+        {
+          "heading": "Loaf Cakes",
+          "assortedImage": "/images/products/muffins-loaf-pie/loaf-cakes-honey.webp",
+          "items": [
+            {
+              "name": "Honey",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/loaf-cakes-honey.webp",
+              "sourceName": "Loaf Cake Honey"
+            },
+            {
+              "name": "Lemon",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/loaf-cakes-lemon.webp",
+              "sourceName": "Loaf Cake Lemon"
+            },
+            {
+              "name": "Marble",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/loaf-cakes-marble.webp",
+              "sourceName": "Loaf Cake Marbel"
+            },
+            {
+              "name": "Chocolate",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/loaf-cakes-chocolate.webp",
+              "sourceName": "Loaf Cake Chocolate"
+            },
+            {
+              "name": "Chocolate Chip",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/loaf-cakes-chocolate-chip.webp",
+              "sourceName": "Loaf Cake Chocolate Chip"
+            },
+            {
+              "name": "Apple Cinnamon",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/loaf-cakes-apple-cinnamon.webp",
+              "sourceName": "Loaf Cake Apple Cinnamon"
+            }
+          ]
+        },
+        {
+          "heading": "Pies",
+          "assortedImage": "/images/products/muffins-loaf-pie/pies-apple-raspberry.webp",
+          "items": [
+            {
+              "name": "Apple Raspberry",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/pies-apple-raspberry.webp",
+              "sourceName": "Pie Apple Rasberry"
+            },
+            {
+              "name": "Blueberry",
+              "tags": [],
+              "image": "/images/products/muffins-loaf-pie/pies-blueberry.webp",
+              "sourceName": "Pie Blueberry"
+            }
+          ]
+        }
+      ],
+      "imageSource": "render-crawl 2026-06-19 (live GoDaddy carousels) — placeholder photos, replace with Chris's photography"
+    },
+    {
+      "slug": "cookies-snack-pastries",
+      "path": "/products/cookies-snack-pastries",
+      "livePath": "/cookies-%7C-snack-pastries-1",
+      "title": "Cookies | Snack Pastries",
+      "certBanner": "NUT FREE · COR Certified",
+      "intro": null,
+      "variantsComplete": true,
+      "sections": [
+        {
+          "heading": "Cookies",
+          "assortedImage": "/images/products/cookies-snack-pastries/cookies-cookie.webp",
+          "items": [
+            {
+              "name": "Cookie",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-cookie.webp",
+              "sourceName": "Cookies"
+            },
+            {
+              "name": "Sprinkles",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-sprinkles.webp",
+              "sourceName": "Cookies Sprinkles"
+            },
+            {
+              "name": "Moon Cookies Poppy Seed",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-moon-cookies-poppy-seed.webp",
+              "sourceName": "Moon Cookies Poppyseeds"
+            },
+            {
+              "name": "Lady Finger",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-lady-finger.webp",
+              "sourceName": "Cookies Lady Finger"
+            },
+            {
+              "name": "Two Tones",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-two-tones.webp",
+              "sourceName": "Cookies Two Tones"
+            },
+            {
+              "name": "Jam Drops",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-jam-drops.webp",
+              "sourceName": "Cookies Jam Drops"
+            },
+            {
+              "name": "Sprinkles Delight",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-sprinkles-delight.webp",
+              "sourceName": "Cookies Sprincles Delight"
+            },
+            {
+              "name": "Strawberry",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-strawberry.webp",
+              "sourceName": "Cookies Strawberry"
+            },
+            {
+              "name": "Poppy Seed",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-poppy-seed.webp",
+              "sourceName": "Cookies Poppyseeds"
+            },
+            {
+              "name": "Apricot",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-apricot.webp",
+              "sourceName": "Cookies Apricot"
+            },
+            {
+              "name": "Margaritas",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-margaritas.webp",
+              "sourceName": "Cookies Margaritas"
+            },
+            {
+              "name": "Birthday Cake",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-birthday-cake.webp",
+              "sourceName": "Cookie Birthday Cake"
+            },
+            {
+              "name": "Caramel",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-caramel.webp",
+              "sourceName": "Cookies Caramel"
+            },
+            {
+              "name": "Chocolate Chip",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/cookies-chocolate-chip.webp",
+              "sourceName": "Cookies Chocolate Chip"
+            }
+          ]
+        },
+        {
+          "heading": "Bites",
+          "assortedImage": "/images/products/cookies-snack-pastries/bites-lemon.webp",
+          "items": [
+            {
+              "name": "Lemon",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/bites-lemon.webp",
+              "sourceName": "Bites Lemon"
+            },
+            {
+              "name": "Chocolate",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/bites-chocolate.webp",
+              "sourceName": "Bites Chocolate"
+            },
+            {
+              "name": "Raspberry",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/bites-raspberry.webp",
+              "sourceName": "Bites Rasberry"
+            },
+            {
+              "name": "Cinnamon",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/bites-cinnamon.webp",
+              "sourceName": "Bites Cinnamon"
+            },
+            {
+              "name": "Apricot",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/bites-apricot.webp",
+              "sourceName": "Bites Apricot"
+            },
+            {
+              "name": "Strawberry",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/bites-strawberry.webp",
+              "sourceName": "Bites Strawberry"
+            },
+            {
+              "name": "Date",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/bites-date.webp",
+              "sourceName": "Bites Date"
+            },
+            {
+              "name": "Raspberry",
+              "tags": [
+                "sugar-free"
+              ],
+              "image": "/images/products/cookies-snack-pastries/bites-raspberry.webp",
+              "sourceName": "Bites Rasberry SF"
+            },
+            {
+              "name": "Cherry",
+              "tags": [
+                "sugar-free"
+              ],
+              "image": "/images/products/cookies-snack-pastries/bites-cherry.webp",
+              "sourceName": "Bites Cherry SF"
+            }
+          ]
+        },
+        {
+          "heading": "Biscotti",
+          "assortedImage": "/images/products/cookies-snack-pastries/biscotti-banana-caramel.webp",
+          "items": [
+            {
+              "name": "Banana Caramel",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/biscotti-banana-caramel.webp",
+              "sourceName": "Biscotti Banana Caramel"
+            },
+            {
+              "name": "Orange Cranberries",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/biscotti-orange-cranberries.webp",
+              "sourceName": "Biscotti Orange Cranberries"
+            },
+            {
+              "name": "Poppy Seed",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/biscotti-poppy-seed.webp",
+              "sourceName": "Biscotti Poppyseeds"
+            },
+            {
+              "name": "Chocolate Chips",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/biscotti-chocolate-chips.webp",
+              "sourceName": "Biscotti Chocolate Chips"
+            }
+          ]
+        },
+        {
+          "heading": "Mandel Bread",
+          "assortedImage": "/images/products/cookies-snack-pastries/mandel-bread-orange-cranberry.webp",
+          "items": [
+            {
+              "name": "Orange Cranberry",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/mandel-bread-orange-cranberry.webp",
+              "sourceName": "Mandel Bread Orange Cranberry"
+            },
+            {
+              "name": "Poppy Seed",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/mandel-bread-poppy-seed.webp",
+              "sourceName": "Mandel Bread Poppyseeds"
+            },
+            {
+              "name": "Marble",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/mandel-bread-marble.webp",
+              "sourceName": "Mandel Marbel"
+            },
+            {
+              "name": "Chocolate Chips",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/mandel-bread-chocolate-chips.webp",
+              "sourceName": "Mandel Chocolate Chips"
+            }
+          ]
+        },
+        {
+          "heading": "Alfajores",
+          "assortedImage": "/images/products/cookies-snack-pastries/alfajores-alfajores.webp",
+          "items": [
+            {
+              "name": "Alfajores",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/alfajores-alfajores.webp",
+              "sourceName": "Alfajores"
+            }
+          ]
+        },
+        {
+          "heading": "Mini Donuts",
+          "assortedImage": "/images/products/cookies-snack-pastries/mini-donuts-chocolate.webp",
+          "items": [
+            {
+              "name": "Chocolate",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/mini-donuts-chocolate.webp",
+              "sourceName": "Mini Donut Chocolate"
+            }
+          ]
+        },
+        {
+          "heading": "Short Bread",
+          "assortedImage": "/images/products/cookies-snack-pastries/short-bread-cinnamon.webp",
+          "items": [
+            {
+              "name": "Cinnamon",
+              "tags": [],
+              "image": "/images/products/cookies-snack-pastries/short-bread-cinnamon.webp",
+              "sourceName": "Short Bread Cinnamon"
+            }
+          ]
+        }
+      ],
+      "imageSource": "render-crawl 2026-06-19 (live GoDaddy carousels) — placeholder photos, replace with Chris's photography"
+    },
+    {
+      "slug": "classic-pastries",
+      "path": "/products/classic-pastries",
+      "livePath": "/classic-pastries",
+      "title": "Classic Pastries",
+      "certBanner": "NUT FREE · COR Certified",
+      "intro": null,
+      "variantsComplete": true,
+      "sections": [
+        {
+          "heading": "Croissants",
+          "assortedImage": "/images/products/classic-pastries/croissants-plain.webp",
+          "items": [
+            {
+              "name": "Plain",
+              "tags": [],
+              "image": "/images/products/classic-pastries/croissants-plain.webp",
+              "sourceName": "Croissant Plain"
+            },
+            {
+              "name": "Apple Cinnamon",
+              "tags": [],
+              "image": "/images/products/classic-pastries/croissants-apple-cinnamon.webp",
+              "sourceName": "Croissant Apple Cinnamon"
+            },
+            {
+              "name": "Cookie Dough",
+              "tags": [],
+              "image": "/images/products/classic-pastries/croissants-cookie-dough.webp",
+              "sourceName": "Croissant Cookiedough"
+            }
+          ]
+        },
+        {
+          "heading": "Hungarian Roulade",
+          "assortedImage": "/images/products/classic-pastries/hungarian-roulade-cinnamon.webp",
+          "items": [
+            {
+              "name": "Cinnamon",
+              "tags": [],
+              "image": "/images/products/classic-pastries/hungarian-roulade-cinnamon.webp",
+              "sourceName": "Hungarian Roulade Cinnamon"
+            },
+            {
+              "name": "Caramel",
+              "tags": [],
+              "image": "/images/products/classic-pastries/hungarian-roulade-caramel.webp",
+              "sourceName": "Hungarian Roulade Caramel"
+            }
+          ]
+        },
+        {
+          "heading": "Strudel",
+          "assortedImage": "/images/products/classic-pastries/strudel-apple-cinnamon.webp",
+          "items": [
+            {
+              "name": "Apple Cinnamon",
+              "tags": [],
+              "image": "/images/products/classic-pastries/strudel-apple-cinnamon.webp",
+              "sourceName": "Strudel Apple Cinnamon"
+            }
+          ]
+        }
+      ],
+      "imageSource": "render-crawl 2026-06-19 (live GoDaddy carousels) — placeholder photos, replace with Chris's photography"
+    },
+    {
+      "slug": "babka-rogalach",
+      "path": "/products/babka-rogalach",
+      "livePath": "/babka-%7C-rogalach",
+      "title": "Babka | Rogalach",
+      "certBanner": "NUT FREE · COR Certified",
+      "intro": null,
+      "variantsComplete": true,
+      "sections": [
+        {
+          "heading": "Babkas",
+          "assortedImage": "/images/products/babka-rogalach/babkas-chocolate.webp",
+          "items": [
+            {
+              "name": "Chocolate",
+              "tags": [],
+              "image": "/images/products/babka-rogalach/babkas-chocolate.webp",
+              "sourceName": "Babka Chocolate"
+            },
+            {
+              "name": "Small Babka Chocolate",
+              "tags": [],
+              "image": "/images/products/babka-rogalach/babkas-small-babka-chocolate.webp",
+              "sourceName": "Small Babka Chocolate"
+            }
+          ]
+        },
+        {
+          "heading": "Rugelach",
+          "assortedImage": "/images/products/babka-rogalach/rugelach-raspberry.webp",
+          "items": [
+            {
+              "name": "Raspberry",
+              "tags": [],
+              "image": "/images/products/babka-rogalach/rugelach-raspberry.webp",
+              "sourceName": "Rogalach Rasberry"
+            }
+          ]
+        }
+      ],
+      "imageSource": "render-crawl 2026-06-19 (live GoDaddy carousels) — placeholder photos, replace with Chris's photography"
+    },
+    {
+      "slug": "cakes-desserts",
+      "path": "/products/cakes-desserts",
+      "livePath": "/cakes-%7C-personal-desserts",
+      "title": "Cakes | Personal Desserts",
+      "certBanner": "NUT FREE · COR Certified",
+      "intro": null,
+      "variantsComplete": true,
+      "sections": [
+        {
+          "heading": "Cakes",
+          "assortedImage": "/images/products/cakes-desserts/cakes-cake.webp",
+          "items": [
+            {
+              "name": "Cake",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-cake.webp",
+              "sourceName": "Cake"
+            },
+            {
+              "name": "Cookies & Cream",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-cookies-and-cream.webp",
+              "sourceName": "Cake Cookies & Cream"
+            },
+            {
+              "name": "Queen Victoria",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-queen-victoria.webp",
+              "sourceName": "Cake Queen Victoria"
+            },
+            {
+              "name": "Strawberry Shortcake",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-strawberry-shortcake.webp",
+              "sourceName": "Cake Strawberry Shortcake"
+            },
+            {
+              "name": "Caramel Coffee",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-caramel-coffee.webp",
+              "sourceName": "Cake Caramel Coffee"
+            },
+            {
+              "name": "Double Chocolate",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-double-chocolate.webp",
+              "sourceName": "Cake Double Chocolate"
+            },
+            {
+              "name": "Chocolate Cream",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-chocolate-cream.webp",
+              "sourceName": "Cake Chocolate Cream"
+            },
+            {
+              "name": "Cookie Dough",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-cookie-dough.webp",
+              "sourceName": "Cake Cookiedough"
+            },
+            {
+              "name": "Boston Cream",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-boston-cream.webp",
+              "sourceName": "Cake Boston Cream"
+            },
+            {
+              "name": "Tiramisu",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-tiramisu.webp",
+              "sourceName": "Cake Tiramisu"
+            },
+            {
+              "name": "Vanilla Cream",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-vanilla-cream.webp",
+              "sourceName": "Cake Vanilla Cream"
+            },
+            {
+              "name": "Red Velvet",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/cakes-red-velvet.webp",
+              "sourceName": "Cake Red Valvet"
+            }
+          ]
+        },
+        {
+          "heading": "Personal Desserts",
+          "assortedImage": "/images/products/cakes-desserts/personal-desserts-coconut-lime.webp",
+          "items": [
+            {
+              "name": "Coconut Lime",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/personal-desserts-coconut-lime.webp",
+              "sourceName": "Personal Dessert Coconut Lime"
+            },
+            {
+              "name": "Red Velvet",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/personal-desserts-red-velvet.webp",
+              "sourceName": "Personal Dessert Red Valvet"
+            },
+            {
+              "name": "Tiramisu",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/personal-desserts-tiramisu.webp",
+              "sourceName": "Personal Dessert Tiramisu"
+            },
+            {
+              "name": "Lemon Meringue",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/personal-desserts-lemon-meringue.webp",
+              "sourceName": "Personal Dessert Lemon Meringue"
+            },
+            {
+              "name": "Strawberry Shortcake",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/personal-desserts-strawberry-shortcake.webp",
+              "sourceName": "Personal Dessert Strawberry Shortcake"
+            },
+            {
+              "name": "Cookie Dough",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/personal-desserts-cookie-dough.webp",
+              "sourceName": "Personal Dessert Cookiedough"
+            },
+            {
+              "name": "Cookies & Cream",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/personal-desserts-cookies-and-cream.webp",
+              "sourceName": "Personal Dessert Cookies & Cream"
+            },
+            {
+              "name": "Carrot",
+              "tags": [],
+              "image": "/images/products/cakes-desserts/personal-desserts-carrot.webp",
+              "sourceName": "Personal Dessert Carrot"
+            }
+          ]
+        }
+      ],
+      "imageSource": "render-crawl 2026-06-19 (live GoDaddy carousels) — placeholder photos, replace with Chris's photography"
+    }
+  ],
+  "labelBadges": [
+    {
+      "image": "/images/labels/badge-nutfree-parve.webp",
+      "alt": "Tova's Bakery label — Nut Free · Parve · Pas Yisroel"
+    },
+    {
+      "image": "/images/labels/badge-dairy-cholov.webp",
+      "alt": "Tova's Bakery label — Nut Free · Dairy · Cholov Yisroel · Pas Yisroel"
+    },
+    {
+      "image": "/images/labels/badge-parve.webp",
+      "alt": "Tova's Bakery label — Parve"
+    },
+    {
+      "image": "/images/labels/badge-glutenfree.webp",
+      "alt": "Tova's Bakery label — Gluten Free"
+    },
+    {
+      "image": "/images/labels/badge-sugarfree.webp",
+      "alt": "Tova's Bakery label — Sugar Free"
+    },
+    {
+      "image": "/images/labels/badge-dairy.webp",
+      "alt": "Tova's Bakery label — Dairy"
+    }
+  ],
+  "labelLoaves": [
+    {
+      "image": "/images/labels/loaf-1.webp",
+      "alt": "Tova's sourdough with the Nut-Free Dairy / Cholov Yisroel label applied"
+    },
+    {
+      "image": "/images/labels/loaf-2.webp",
+      "alt": "Tova's bread with the Nut-Free Parve label applied"
+    },
+    {
+      "image": "/images/labels/loaf-3.webp",
+      "alt": "Tova's challah with the Nut-Free Parve label applied"
+    }
+  ]
+}

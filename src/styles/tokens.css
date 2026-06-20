@@ -1,0 +1,59 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   TOVA'S BAKERY — DESIGN TOKENS
+   Warm heritage, kosher-bakery feel. Style: "Nature Distilled" (muted earthy
+   warmth, generous whitespace, soft shadows). Locked via the ui-ux-pro-max
+   ritual on 2026-06-19. Coordinated with — but distinct from — Grodzinski's
+   espresso/oat/gold + blue: Tova's leans wheat-cream + amber-brown + terracotta.
+   Type: Playfair Display (display/serif) + Inter (sans). Loaded in index.html.
+
+   Colours are stored as raw RGB channel triplets (--c-*) so Tailwind's
+   `<alpha-value>` opacity modifiers work (e.g. bg-ink/40). Convenience
+   --color-* vars wrap them as rgb() for direct use in plain CSS.
+═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Channel triplets (for Tailwind rgb(var(--c) / <alpha-value>)) */
+  --c-bg: 251 244 230;            /* warm wheat cream */
+  --c-bg-elevated: 255 253 247;   /* elevated cards / nav */
+  --c-bg-section: 244 233 210;    /* alternating section band */
+  --c-ink: 46 28 18;              /* deep cocoa — primary text + dark brand */
+  --c-ink-soft: 90 61 43;         /* warm brown — secondary text */
+  --c-primary: 146 64 14;         /* amber-brown — primary brand */
+  --c-primary-hover: 122 53 11;
+  --c-accent: 194 65 12;          /* terracotta — CTA / interactive accent */
+  --c-accent-hover: 154 52 18;
+  --c-honey: 201 138 43;          /* honey gold — decorative */
+  --c-rule: 231 214 181;          /* hairline dividers */
+  --c-border: 217 196 155;        /* card / input borders */
+
+  /* Convenience rgb() wrappers for plain-CSS use */
+  --color-bg: rgb(var(--c-bg));
+  --color-bg-elevated: rgb(var(--c-bg-elevated));
+  --color-ink: rgb(var(--c-ink));
+  --color-accent: rgb(var(--c-accent));
+  --color-rule: rgb(var(--c-rule));
+  --color-border: rgb(var(--c-border));
+
+  /* Typography */
+  --font-serif: 'Playfair Display', 'Playfair Fallback', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', 'Inter Fallback', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: var(--font-serif);
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+
+  /* Radius — softly organic (Nature Distilled) */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* Soft natural shadows only (anti-"slop" guardrail) */
+  --shadow-sm: 0 1px 2px rgba(46, 28, 18, 0.06);
+  --shadow-md: 0 6px 20px -10px rgba(46, 28, 18, 0.14);
+  --shadow-lg: 0 10px 30px -12px rgba(46, 28, 18, 0.18);
+
+  /* Motion — natural easing, 200–300ms */
+  --transition: 200ms ease-out;
+}
