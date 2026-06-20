@@ -61,8 +61,9 @@ export default function SectionNav() {
   };
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled ? 'border-b border-rule/70 bg-cream/95 shadow-soft backdrop-blur-xl' : 'bg-transparent'}`}>
-      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+    <>
+      <header className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled ? 'border-b border-rule/70 bg-cream/95 shadow-soft backdrop-blur-xl' : 'bg-transparent'}`}>
+        <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <button onClick={toTop} className={`font-serif text-xl font-semibold tracking-tight transition-colors ${light ? 'text-cream-soft' : 'text-ink'}`} aria-label="Tova's Bakery — top">
           Tova&rsquo;s Bakery
         </button>
@@ -94,12 +95,13 @@ export default function SectionNav() {
         <button className={`md:hidden ${light ? 'text-cream-soft' : 'text-ink'}`} aria-label="Menu" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
           <Menu size={24} />
         </button>
-      </nav>
+        </nav>
+      </header>
 
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 z-[60] flex flex-col bg-cream md:hidden"
+            className="fixed inset-0 z-[70] flex flex-col bg-cream md:hidden"
             initial={false}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -145,6 +147,6 @@ export default function SectionNav() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
