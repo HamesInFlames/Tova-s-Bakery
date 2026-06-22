@@ -68,7 +68,7 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
         transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
         onClick={(e) => e.stopPropagation()}
       >
-        <header className="flex items-center justify-between gap-4 px-6 pt-5">
+        <header className="flex shrink-0 items-center justify-between gap-4 px-6 pt-5">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-accent-hover">Full Menu</p>
             <h2 className="font-serif text-2xl font-semibold text-ink">{TOTAL} varieties, all nut-free</h2>
@@ -79,7 +79,7 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
         </header>
 
         {/* Stationary category bar */}
-        <div ref={navRef} className="no-scrollbar flex gap-2 overflow-x-auto border-b border-rule px-6 py-4">
+        <div ref={navRef} className="no-scrollbar flex shrink-0 items-center gap-2 overflow-x-auto border-b border-rule px-6 py-4">
           {categories.map((c) => {
             const on = c.slug === active;
             return (
@@ -98,7 +98,7 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
           })}
         </div>
 
-        <div ref={bodyRef} className="overflow-y-auto px-6 py-8">
+        <div ref={bodyRef} className="min-h-0 flex-1 overflow-y-auto px-6 py-8">
           {categories.map((cat) => {
             const items: LightboxItem[] = cat.sections.flatMap((s) =>
               s.items.map((it) => ({ name: it.name, image: it.image, tags: it.tags, collection: s.heading })),
