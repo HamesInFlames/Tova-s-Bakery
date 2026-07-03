@@ -14,7 +14,7 @@ export default function VariantImage({ src, alt }: VariantImageProps) {
 
   return (
     <div
-      className="relative aspect-square w-full overflow-hidden rounded-lg border border-border-warm bg-cream-soft"
+      className="relative aspect-square w-full overflow-hidden rounded-none border border-ink/15 bg-paper"
       aria-live="polite"
     >
       <AnimatePresence mode="wait">
@@ -28,14 +28,14 @@ export default function VariantImage({ src, alt }: VariantImageProps) {
             draggable={false}
             className="absolute inset-0 h-full w-full object-contain p-4"
             {...fade}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.2 }}
           />
         ) : (
           <motion.div
             key="placeholder"
-            className="absolute inset-0 flex items-center justify-center font-serif text-xl text-ink-soft"
+            className="absolute inset-0 flex items-center justify-center font-display text-xl text-ink/50"
             {...fade}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.2 }}
           >
             {alt}
           </motion.div>

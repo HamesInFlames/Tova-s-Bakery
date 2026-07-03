@@ -104,6 +104,6 @@ section[id] {
   transition: color var(--transition);
 }
 .variant-row__leader {
-  border-bottom: 1px dotted var(--color-border);
+  border-bottom: 1px dotted rgb(var(--c-ink) / 0.3);
   transform: translateY(-0.2em);
 }

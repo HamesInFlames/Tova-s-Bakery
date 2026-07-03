@@ -22,7 +22,7 @@ export default function VideoEmbed({ src, poster, title, className = '' }: Video
         autoPlay
         playsInline
         preload="metadata"
-        className={`aspect-video w-full rounded-2xl bg-ink object-cover ${className}`}
+        className={`aspect-video w-full rounded-none bg-ink object-cover ${className}`}
       />
     );
   }
@@ -32,7 +32,7 @@ export default function VideoEmbed({ src, poster, title, className = '' }: Video
       type="button"
       onClick={() => setPlaying(true)}
       aria-label={`Play video: ${title}`}
-      className={`group relative aspect-video w-full overflow-hidden rounded-2xl bg-ink ring-1 ring-border-warm/30 ${className}`}
+      className={`group relative aspect-video w-full overflow-hidden rounded-none bg-ink ring-1 ring-paper/20 ${className}`}
     >
       {poster && (
         <img
@@ -43,7 +43,7 @@ export default function VideoEmbed({ src, poster, title, className = '' }: Video
         />
       )}
       <span className="absolute inset-0 flex items-center justify-center">
-        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-cream-soft/90 text-primary shadow-warm transition group-hover:scale-110 group-hover:bg-cream-soft">
+        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-paper/90 text-ink transition group-hover:scale-110 group-hover:bg-paper">
           <Play size={26} className="ml-1" fill="currentColor" aria-hidden="true" />
         </span>
       </span>

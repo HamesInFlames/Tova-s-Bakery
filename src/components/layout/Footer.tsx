@@ -25,13 +25,14 @@ function SocialIcon({ platform }: { platform: string }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-cream">
+    <footer className="bg-ink text-paper">
+      {/* TODO(phase0): engraved illustration motif */}
       <div className="mx-auto max-w-container px-6 py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <p className="font-serif text-2xl font-semibold text-cream-soft">Tova&rsquo;s Bakery</p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/75">{site.shortDescription}</p>
+            <img src="/images/brand/logo-stacked-white.svg" alt="Tova's Bakery — since 1999" className="w-36" />
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/70">{site.shortDescription}</p>
             <div className="mt-5 flex gap-3">
               {site.social.map((s) => (
                 <a
@@ -40,7 +41,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.platform}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-cream/25 text-cream/85 transition-colors hover:border-honey hover:text-honey"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-paper/25 text-paper/85 transition-colors duration-150 hover:border-gold hover:text-gold"
                 >
                   <SocialIcon platform={s.platform} />
                 </a>
@@ -50,23 +51,23 @@ export default function Footer() {
 
           {/* Explore */}
           <div>
-            <h2 className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-honey">Explore</h2>
-            <ul className="space-y-2 text-sm text-cream/85">
-              <li><Link to="/#story" className="hover:text-honey">Our Story</Link></li>
-              <li><Link to="/#range" className="hover:text-honey">Products</Link></li>
-              <li><Link to="/#wholesale" className="hover:text-honey">Wholesale</Link></li>
-              <li><Link to="/#quality" className="hover:text-honey">Quality &amp; Trust</Link></li>
-              <li><Link to="/#contact" className="hover:text-honey">Contact</Link></li>
+            <h2 className="mb-4 text-xs font-medium uppercase tracking-caps text-paper/60">Explore</h2>
+            <ul className="space-y-2 text-sm text-paper/80">
+              <li><Link to="/#story" className="transition-colors duration-150 hover:text-gold">Our Story</Link></li>
+              <li><Link to="/#range" className="transition-colors duration-150 hover:text-gold">Products</Link></li>
+              <li><Link to="/#wholesale" className="transition-colors duration-150 hover:text-gold">Wholesale</Link></li>
+              <li><Link to="/#quality" className="transition-colors duration-150 hover:text-gold">Quality &amp; Trust</Link></li>
+              <li><Link to="/#contact" className="transition-colors duration-150 hover:text-gold">Contact</Link></li>
             </ul>
           </div>
 
           {/* Products */}
           <div>
-            <h2 className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-honey">Our Products</h2>
-            <ul className="space-y-2 text-sm text-cream/85">
+            <h2 className="mb-4 text-xs font-medium uppercase tracking-caps text-paper/60">Our Products</h2>
+            <ul className="space-y-2 text-sm text-paper/80">
               {products.children!.map((c) => (
                 <li key={c.path}>
-                  <Link to={c.path} className="hover:text-honey">{c.label}</Link>
+                  <Link to={c.path} className="transition-colors duration-150 hover:text-gold">{c.label}</Link>
                 </li>
               ))}
             </ul>
@@ -74,24 +75,28 @@ export default function Footer() {
 
           {/* Visit */}
           <div>
-            <h2 className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-honey">Visit</h2>
-            <ul className="space-y-3 text-sm text-cream/85">
+            <h2 className="mb-4 text-xs font-medium uppercase tracking-caps text-paper/60">Visit</h2>
+            <ul className="space-y-3 text-sm text-paper/80">
               <li className="flex gap-2">
-                <MapPin size={16} className="mt-0.5 shrink-0 text-honey" aria-hidden="true" />
+                <MapPin size={16} className="mt-0.5 shrink-0 text-paper/60" aria-hidden="true" />
                 <span>{site.contact.address}</span>
               </li>
               <li className="flex gap-2">
-                <Phone size={16} className="mt-0.5 shrink-0 text-honey" aria-hidden="true" />
-                <a href={site.contact.phoneHref} className="hover:text-honey">{site.contact.phone}</a>
+                <Phone size={16} className="mt-0.5 shrink-0 text-paper/60" aria-hidden="true" />
+                <a href={site.contact.phoneHref} className="transition-colors duration-150 hover:text-gold">{site.contact.phone}</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <hr className="my-10 border-cream/15" />
-        <div className="flex flex-col items-center justify-between gap-3 text-xs text-cream/60 sm:flex-row">
+        <div className="mt-14 flex items-center gap-6">
+          <span className="flex-1 border-t border-paper/25" aria-hidden="true" />
+          <span className="text-xs font-medium uppercase tracking-caps-wide text-paper/70">Tovasbakery.com</span>
+          <span className="flex-1 border-t border-paper/25" aria-hidden="true" />
+        </div>
+        <div className="mt-6 flex flex-col items-center justify-center gap-2 text-xs text-paper/50 sm:flex-row sm:gap-6">
           <p>&copy; {year} Tova&rsquo;s Bakery. All Rights Reserved.</p>
-          <p className="font-semibold uppercase tracking-[0.12em] text-honey">Nut Free &middot; COR Certified Kosher</p>
+          <p className="font-medium uppercase tracking-caps">Nut Free &ndash; Parve &ndash; Pas Yisroel</p>
         </div>
       </div>
     </footer>

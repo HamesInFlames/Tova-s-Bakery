@@ -49,7 +49,7 @@ export default function VariantList({ items, activeIndex, onSelect }: VariantLis
             tabIndex={isActive ? 0 : -1}
             onClick={() => onSelect(i)}
             onKeyDown={(e) => handleKeyDown(e, i)}
-            className={`variant-row ${isActive ? 'text-accent' : 'text-ink hover:text-accent'}`}
+            className={`variant-row ${isActive ? 'font-bold text-ink' : 'text-ink hover:opacity-70'}`}
           >
             <span className="font-sans text-[0.95rem]">{item.name}</span>
             <span className="variant-row__leader" aria-hidden="true" />
@@ -57,7 +57,7 @@ export default function VariantList({ items, activeIndex, onSelect }: VariantLis
               {item.tags.map((t) => (
                 <DietaryTag key={t} tag={t} />
               ))}
-              {isActive && <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />}
+              {isActive && <span className="h-1.5 w-1.5 rounded-full bg-gold" aria-hidden="true" />}
             </span>
           </button>
         );

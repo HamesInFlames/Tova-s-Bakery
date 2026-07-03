@@ -36,18 +36,19 @@ export default function RangeShowcase() {
   }, [menuOpen, lb]);
 
   return (
-    <section id="range" className="overflow-hidden bg-cream-soft py-28 sm:py-36">
+    <section id="range" className="overflow-hidden border-t border-ink/15 bg-paper py-28 sm:py-36">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="text-center">
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.3em] text-accent-hover">The Range</p>
-          <h2 className="font-serif text-4xl font-semibold text-ink sm:text-5xl">Seven collections, {TOTAL} varieties</h2>
-          <p className="mx-auto mt-5 max-w-xl text-lg text-ink-soft">
+          <p className="mb-5 text-xs font-medium uppercase tracking-caps-wide text-ink/60">The Range</p>
+          <h2 className="font-display text-4xl font-bold text-ink sm:text-5xl">Seven collections, {TOTAL} varieties</h2>
+          <p className="mx-auto mt-5 max-w-xl text-lg text-ink/65">
             A taste of the range, scrolling on its own &mdash; hover to pause, tap any item to see it up close. Open the
             full menu to browse everything by collection.
           </p>
         </Reveal>
       </div>
 
+      {/* TODO(phase0): engraved-bread divider between subsections */}
       {/* One carousel of random products */}
       <Reveal className="rail-row mt-14">
         <ProductMarquee items={RANDOM} onOpen={(i) => setLb({ items: RANDOM, index: i })} />
@@ -57,7 +58,7 @@ export default function RangeShowcase() {
         <button
           type="button"
           onClick={() => setMenuOpen(true)}
-          className="inline-flex items-center gap-2.5 rounded-full bg-ink px-8 py-4 text-sm font-semibold text-cream-soft shadow-warm transition-colors hover:bg-primary"
+          className="inline-flex items-center gap-2.5 rounded-none bg-ink px-8 py-4 text-sm font-medium uppercase tracking-caps text-paper transition-colors duration-200 hover:bg-gold hover:text-ink"
         >
           <LayoutGrid size={17} aria-hidden="true" />
           View the full menu

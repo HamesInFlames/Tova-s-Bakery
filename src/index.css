@@ -3,25 +3,18 @@
 @tailwind utilities;
 
 /* Design tokens live in src/styles/tokens.css, imported in main.tsx before this
-   file. Fonts (Playfair Display + Inter) are loaded via <link> in index.html. */
+   file. Fonts (Jost — interim Cera Pro stand-in) are self-hosted via
+   @fontsource imports in main.tsx. */
 
-/* Size-adjusted fallback faces so text occupies the same space before the web
-   fonts load — eliminates the font-swap layout shift (CLS) on first paint. */
+/* Size-adjusted fallback face so text occupies the same space before the web
+   font loads — eliminates the font-swap layout shift (CLS) on first paint. */
 @font-face {
-  font-family: 'Inter Fallback';
+  font-family: 'Jost Fallback';
   src: local('Arial');
-  ascent-override: 90.2%;
-  descent-override: 22.48%;
+  ascent-override: 100%;
+  descent-override: 29%;
   line-gap-override: 0%;
-  size-adjust: 107.4%;
-}
-@font-face {
-  font-family: 'Playfair Fallback';
-  src: local('Georgia');
-  ascent-override: 98%;
-  descent-override: 26%;
-  line-gap-override: 0%;
-  size-adjust: 111%;
+  size-adjust: 94%;
 }
 
 *,
@@ -46,7 +39,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings inherit colour (ink on light, cream on dark bands) — set per-context
+/* Headings inherit colour (ink on white, paper on black bands) — set per-context
    via Tailwind utilities. Don't hard-code a colour here or it overrides dark sections. */
 h1, h2, h3, h4 {
   font-family: var(--font-display);
@@ -64,18 +57,19 @@ a {
   text-decoration: none;
 }
 
-/* Visible focus for keyboard users (accessibility baseline). */
+/* Visible focus for keyboard users (accessibility baseline). Gold is the
+   brand's hover/focus accent and reads on both white and black sections. */
 :focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid var(--color-gold);
   outline-offset: 2px;
 }
 
-/* Scroll-reveal helper (respects reduced motion). */
+/* Scroll-reveal helper (respects reduced motion). Crisp, not organic. */
 @media (prefers-reduced-motion: no-preference) {
   .reveal {
     opacity: 0;
-    transform: translateY(14px);
-    transition: opacity 600ms ease-out, transform 600ms ease-out;
+    transform: translateY(10px);
+    transition: opacity 220ms ease-out, transform 220ms ease-out;
   }
   .reveal.is-visible {
     opacity: 1;

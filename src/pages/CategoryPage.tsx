@@ -22,25 +22,25 @@ export default function CategoryPage() {
       />
 
       {/* Kosher cert ribbon — trust signal at the top of every category page */}
-      <div className="bg-primary text-cream-soft">
-        <div className="mx-auto flex max-w-container items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold uppercase tracking-[0.15em]">
+      <div className="bg-ink text-paper">
+        <div className="mx-auto flex max-w-container items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold uppercase tracking-caps">
           <ShieldCheck size={16} aria-hidden="true" />
           {cat.certBanner}
         </div>
       </div>
 
-      <header className="bg-wheat">
+      <header className="border-b border-ink/15 bg-paper">
         <div className="mx-auto max-w-container px-6 py-14 text-center">
-          <p className="mb-3 font-sans text-xs font-semibold uppercase tracking-[0.25em] text-accent-hover">
+          <p className="mb-3 text-xs font-medium uppercase tracking-caps-wide text-ink/60">
             <Link to="/products" className="hover:underline">Our Products</Link>
           </p>
-          <h1 className="font-serif text-4xl font-semibold text-ink sm:text-5xl">{cat.title}</h1>
-          {cat.intro && <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{cat.intro}</p>}
-          <p className="mt-4 text-sm text-ink-soft">{total} varieties across {cat.sections.length} collections</p>
+          <h1 className="font-display text-4xl font-bold text-ink sm:text-5xl">{cat.title}</h1>
+          {cat.intro && <p className="mx-auto mt-5 max-w-2xl text-lg text-ink/65">{cat.intro}</p>}
+          <p className="mt-4 text-sm text-ink/65">{total} varieties across {cat.sections.length} collections</p>
         </div>
       </header>
 
-      <section className="bg-cream">
+      <section className="bg-paper">
         <div className="mx-auto max-w-container px-6 py-8">
           {cat.sections.map((section) => (
             <CategorySection key={section.heading} section={section} />
@@ -49,15 +49,15 @@ export default function CategoryPage() {
       </section>
 
       {/* Other categories */}
-      <section className="border-t border-rule bg-cream-soft">
+      <section className="border-t border-ink/15 bg-paper">
         <div className="mx-auto max-w-container px-6 py-12">
-          <h2 className="mb-5 text-center font-serif text-2xl font-semibold text-ink">More from Tova's</h2>
+          <h2 className="mb-5 text-center font-display text-2xl font-bold text-ink">More from Tova's</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {others.map((c) => (
               <Link
                 key={c.slug}
                 to={c.path}
-                className="rounded-full border border-border-warm bg-cream px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-primary hover:text-cream-soft"
+                className="rounded-none border border-ink/20 bg-paper px-4 py-2 text-xs font-medium uppercase tracking-caps text-ink/70 transition-colors hover:border-ink hover:text-ink"
               >
                 {c.title}
               </Link>

@@ -10,7 +10,7 @@ export default function GrodzinskiButton() {
         href={site.crossLink.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 rounded-full border border-border-warm bg-cream-soft/95 px-4 py-2.5 text-sm font-semibold text-ink shadow-warm backdrop-blur transition-colors hover:bg-primary hover:text-cream-soft"
+        className="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 rounded-full border border-ink/20 bg-paper/95 px-4 py-2.5 text-xs font-medium uppercase tracking-caps text-ink backdrop-blur transition-colors duration-150 hover:border-gold hover:bg-gold"
       >
         <span>{site.crossLink.label}</span>
         <ExternalLink size={15} aria-hidden="true" />

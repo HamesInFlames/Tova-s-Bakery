@@ -49,7 +49,7 @@ export default function ProductLightbox({ items, index, onClose, onIndex }: Prod
 
   return (
     <motion.div
-      className="fixed inset-0 z-[60] flex flex-col bg-ink/90 backdrop-blur-md"
+      className="fixed inset-0 z-[60] flex flex-col bg-ink/95 backdrop-blur-md"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -61,15 +61,15 @@ export default function ProductLightbox({ items, index, onClose, onIndex }: Prod
     >
       {/* Top bar */}
       <div className="flex items-center justify-between px-5 py-4 sm:px-8" onClick={(e) => e.stopPropagation()}>
-        <span className="text-sm font-medium text-cream/70">{index + 1} / {items.length}</span>
-        <button ref={closeRef} onClick={onClose} aria-label="Close" className="flex h-10 w-10 items-center justify-center rounded-full bg-cream-soft/10 text-cream-soft transition-colors hover:bg-cream-soft/25">
+        <span className="text-sm font-medium text-paper/60">{index + 1} / {items.length}</span>
+        <button ref={closeRef} onClick={onClose} aria-label="Close" className="flex h-10 w-10 items-center justify-center rounded-full bg-paper/10 text-paper transition-colors duration-200 hover:bg-paper/25">
           <X size={20} />
         </button>
       </div>
 
       {/* Image — swipe (drag) to navigate */}
       <div className="relative flex flex-1 items-center justify-center overflow-hidden px-4" onClick={(e) => e.stopPropagation()}>
-        <button onClick={prev} aria-label="Previous" className="absolute left-2 z-10 hidden h-11 w-11 items-center justify-center rounded-full bg-cream-soft/10 text-cream-soft transition-colors hover:bg-cream-soft/25 sm:flex">
+        <button onClick={prev} aria-label="Previous" className="absolute left-2 z-10 hidden h-11 w-11 items-center justify-center rounded-full bg-paper/10 text-paper transition-colors duration-200 hover:bg-paper/25 sm:flex">
           <ChevronLeft size={22} />
         </button>
 
@@ -89,19 +89,19 @@ export default function ProductLightbox({ items, index, onClose, onIndex }: Prod
           style={{ touchAction: 'pan-y' }}
         >
           {item.image && (
-            <img src={item.image} alt={item.name} draggable={false} className="max-h-[58vh] w-auto rounded-2xl bg-cream object-contain p-4" />
+            <img src={item.image} alt={item.name} draggable={false} className="max-h-[58vh] w-auto rounded-none bg-paper object-contain p-4" />
           )}
         </motion.div>
 
-        <button onClick={next} aria-label="Next" className="absolute right-2 z-10 hidden h-11 w-11 items-center justify-center rounded-full bg-cream-soft/10 text-cream-soft transition-colors hover:bg-cream-soft/25 sm:flex">
+        <button onClick={next} aria-label="Next" className="absolute right-2 z-10 hidden h-11 w-11 items-center justify-center rounded-full bg-paper/10 text-paper transition-colors duration-200 hover:bg-paper/25 sm:flex">
           <ChevronRight size={22} />
         </button>
       </div>
 
       {/* Caption */}
       <div className="px-5 pb-3 pt-4 text-center" onClick={(e) => e.stopPropagation()}>
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-honey">{item.collection}</p>
-        <h3 className="mt-1.5 font-serif text-2xl font-semibold text-cream-soft">{item.name}</h3>
+        <p className="text-xs font-medium uppercase tracking-caps text-gold">{item.collection}</p>
+        <h3 className="mt-1.5 font-display text-2xl font-bold text-paper">{item.name}</h3>
         {item.tags.length > 0 && (
           <div className="mt-2.5 flex justify-center gap-1.5">
             {item.tags.map((t) => (
@@ -120,8 +120,8 @@ export default function ProductLightbox({ items, index, onClose, onIndex }: Prod
             onClick={() => onIndex(i)}
             aria-label={`View ${it.name}`}
             aria-current={i === index}
-            className={`h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-cream transition-all duration-200 ${
-              i === index ? 'opacity-100 ring-2 ring-honey' : 'opacity-45 hover:opacity-90'
+            className={`h-16 w-16 shrink-0 overflow-hidden rounded-none bg-paper transition-all duration-200 ${
+              i === index ? 'opacity-100 ring-2 ring-gold' : 'opacity-45 hover:opacity-90'
             }`}
           >
             {it.image && <img src={it.image} alt="" loading="lazy" className="h-full w-full object-contain p-1.5" />}

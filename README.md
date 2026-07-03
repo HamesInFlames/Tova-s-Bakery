@@ -3,9 +3,14 @@
 A custom rebuild mockup for **Tova's Bakery** (tovasbakery.com) — a kosher,
 nut-free, COR-certified wholesale & retail bakery in Markham, Ontario, since 1999.
 
-> **Status:** mockup / work-in-progress. Product imagery is sourced from the live
+> **Status:** mockup / work-in-progress, rebranded to the **official brand manual**
+> (`BRAND_MANUAL_TOVA_S.pdf` — monochrome black/white + gold/mint label accents,
+> Qaligo wordmark, Cera Pro type). Product imagery is sourced from the live
 > GoDaddy site as placeholders and should be replaced with final photography.
-> The contact form uses a placeholder Web3Forms key.
+> The contact form uses a placeholder Web3Forms key. Body type is interim
+> **Jost** until licensed Cera Pro files arrive (drop-in swap — see
+> `src/styles/tokens.css`). Run `scripts/extract-brand-assets.py` once the
+> brand-manual PDF is in the repo root to pull the clean vectors.
 
 ## What it is
 
@@ -53,6 +58,12 @@ the rationale is in [`design-system/MASTER.md`](design-system/MASTER.md).
 
 ## Before launch
 
+- Drop `BRAND_MANUAL_TOVA_S.pdf` in the repo root and run
+  `scripts/extract-brand-assets.py` — swap the interim traced wordmark SVGs for
+  the PDF vectors; add the engraved illustrations, label artwork, and packaging
+  photography at the `TODO(phase0)` markers.
+- License **Cera Pro** (TypeMates) + optionally **Qaligo**; self-host the woff2
+  files (the `@font-face` swap is documented in `src/styles/tokens.css`).
 - Replace placeholder product imagery with final photography.
 - Register a real Web3Forms access key (`VITE_WEB3FORMS_ACCESS_KEY`) for Tova's inbox.
 - Move the wholesale videos to the client's own CDN.
