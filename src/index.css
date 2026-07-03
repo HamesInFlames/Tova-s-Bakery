@@ -39,7 +39,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings inherit colour (ink on light, cream on dark bands) — set per-context
+/* Headings inherit colour (ink on white, paper on black bands) — set per-context
    via Tailwind utilities. Don't hard-code a colour here or it overrides dark sections. */
 h1, h2, h3, h4 {
   font-family: var(--font-display);

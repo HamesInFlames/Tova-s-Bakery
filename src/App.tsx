@@ -31,14 +31,14 @@ export default function App() {
   const isHome = location.pathname === '/';
 
   return (
-    <div className="flex min-h-screen flex-col bg-cream">
-      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-ink focus:px-4 focus:py-2 focus:text-cream-soft">
+    <div className="flex min-h-screen flex-col bg-paper">
+      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-none focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">
         Skip to content
       </a>
       <SectionNav />
       <ScrollToTop />
       <main id="main" className={`flex-1 ${isHome ? '' : 'pt-16'}`}>
-        <Suspense fallback={<div className="flex min-h-[60vh] items-center justify-center text-ink-soft">Loading…</div>}>
+        <Suspense fallback={<div className="flex min-h-[60vh] items-center justify-center text-ink/60">Loading…</div>}>
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />

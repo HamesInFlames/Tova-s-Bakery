@@ -38,22 +38,22 @@ function CountUp({ to, suffix }: { to: number; suffix: string }) {
 
 export default function StatBand() {
   return (
-    <section className="bg-cream px-6 py-20">
+    <section className="bg-ink px-6 py-20 text-paper">
       <div className="mx-auto max-w-5xl">
         <Reveal className="mb-12 text-center">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-accent-hover">Why Tova&rsquo;s</p>
-          <p className="mx-auto max-w-2xl font-serif text-2xl font-medium leading-snug text-ink sm:text-3xl">
+          <p className="mb-4 text-xs font-medium uppercase tracking-caps-wide text-gold">Why Tova&rsquo;s</p>
+          <p className="mx-auto max-w-2xl font-display text-2xl font-medium leading-snug text-paper sm:text-3xl">
             A wholesale partner retailers have shelved with confidence since {site.founded}.
           </p>
         </Reveal>
         <Reveal>
           <dl className="grid grid-cols-2 gap-y-10 sm:grid-cols-4">
             {STATS.map((s, i) => (
-              <div key={s.label} className={`px-4 text-center ${i > 0 ? 'sm:border-l sm:border-rule' : ''}`}>
-                <dt className="font-serif text-5xl font-semibold text-primary sm:text-6xl">
+              <div key={s.label} className={`px-4 text-center ${i > 0 ? 'sm:border-l sm:border-gold/40' : ''}`}>
+                <dt className="font-display text-5xl font-black text-paper sm:text-6xl">
                   <CountUp to={s.value} suffix={s.suffix} />
                 </dt>
-                <dd className="mt-2 text-sm font-medium uppercase tracking-wide text-ink-soft">{s.label}</dd>
+                <dd className="mt-2 text-sm font-medium uppercase tracking-caps text-paper/60">{s.label}</dd>
               </div>
             ))}
           </dl>

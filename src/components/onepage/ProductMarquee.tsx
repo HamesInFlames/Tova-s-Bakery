@@ -33,19 +33,19 @@ export default function ProductMarquee({ items, reverse = false, onOpen }: Produ
                 tabIndex={isClone ? -1 : 0}
                 className="group/card block w-44 text-left sm:w-56"
               >
-                <div className="aspect-square overflow-hidden rounded-3xl bg-cream shadow-soft ring-1 ring-border-warm/40 transition-all duration-300 group-hover/card:-translate-y-1.5 group-hover/card:shadow-warm group-hover/card:ring-accent/30">
+                <div className="aspect-square overflow-hidden rounded-none bg-paper ring-1 ring-ink/10 transition-all duration-200 group-hover/card:-translate-y-1 group-hover/card:ring-ink/40">
                   {it.image && (
                     <img
                       src={it.image}
                       alt=""
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full object-contain p-4 transition-transform duration-500 ease-out group-hover/card:scale-110"
+                      className="h-full w-full object-contain p-4 transition-transform duration-300 ease-out group-hover/card:scale-110"
                     />
                   )}
                 </div>
                 <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1">
-                  <p className="text-sm font-medium text-ink transition-colors group-hover/card:text-accent">{it.name}</p>
+                  <p className="text-sm font-medium text-ink">{it.name}</p>
                   {it.tags.map((t) => (
                     <DietaryTag key={t} tag={t} />
                   ))}

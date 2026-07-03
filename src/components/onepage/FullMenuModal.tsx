@@ -50,7 +50,7 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/70 p-4 backdrop-blur-sm sm:p-8"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/80 p-4 backdrop-blur-sm sm:p-8"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -61,7 +61,7 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
       aria-label="Full menu"
     >
       <motion.div
-        className="flex max-h-[88vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl border border-border-warm/40 bg-cream shadow-warm"
+        className="flex max-h-[88vh] w-full max-w-5xl flex-col overflow-hidden rounded-none border border-ink/15 bg-paper"
         initial={{ opacity: 0, scale: 0.97 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.98 }}
@@ -70,16 +70,16 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
       >
         <header className="flex shrink-0 items-center justify-between gap-4 px-6 pt-5">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-accent-hover">Full Menu</p>
-            <h2 className="font-serif text-2xl font-semibold text-ink">{TOTAL} varieties, all nut-free</h2>
+            <p className="text-xs font-medium uppercase tracking-caps text-ink/60">Full Menu</p>
+            <h2 className="font-display text-2xl font-bold text-ink">{TOTAL} varieties, all nut-free</h2>
           </div>
-          <button ref={closeRef} onClick={onClose} aria-label="Close menu" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-wheat text-ink transition-colors hover:bg-border-warm">
+          <button ref={closeRef} onClick={onClose} aria-label="Close menu" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink/5 text-ink transition-colors duration-200 hover:bg-ink hover:text-paper">
             <X size={20} />
           </button>
         </header>
 
         {/* Stationary category bar */}
-        <div ref={navRef} className="no-scrollbar flex shrink-0 items-center gap-2 overflow-x-auto border-b border-rule px-6 py-4">
+        <div ref={navRef} className="no-scrollbar flex shrink-0 items-center gap-2 overflow-x-auto border-b border-ink/15 px-6 py-4">
           {categories.map((c) => {
             const on = c.slug === active;
             return (
@@ -88,8 +88,8 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
                 data-navcat={c.slug}
                 onClick={() => jump(c.slug)}
                 aria-current={on}
-                className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  on ? 'bg-ink text-cream-soft' : 'border border-border-warm text-ink/70 hover:text-ink'
+                className={`whitespace-nowrap rounded-none px-4 py-2 text-xs font-medium uppercase tracking-caps transition-colors duration-200 ${
+                  on ? 'bg-ink text-paper' : 'border border-ink/20 text-ink/70 hover:border-ink hover:text-ink'
                 }`}
               >
                 {c.title}
@@ -107,14 +107,14 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
             return (
               <div key={cat.slug} data-cat={cat.slug} className="mb-12 scroll-mt-4 last:mb-2">
                 <div className="mb-5 flex items-baseline gap-3">
-                  <h3 className="font-serif text-xl font-semibold text-ink sm:text-2xl">{cat.title}</h3>
+                  <h3 className="font-display text-xl font-bold text-ink sm:text-2xl">{cat.title}</h3>
                   <span className="text-sm text-ink/70">{items.length}</span>
                 </div>
                 {cat.sections
                   .filter((s) => s.items.length > 0)
                   .map((sub) => (
                     <div key={sub.heading} className="mb-7 last:mb-0">
-                      <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-accent-hover">{sub.heading}</p>
+                      <p className="mb-3 text-xs font-medium uppercase tracking-caps text-ink/60">{sub.heading}</p>
                       <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-5">
                         {sub.items.map((it) => {
                           idx += 1;
@@ -127,7 +127,7 @@ export default function FullMenuModal({ onClose, onOpenProduct }: FullMenuModalP
                               aria-label={`View ${it.name}`}
                               className="group/m text-left"
                             >
-                              <div className="aspect-square overflow-hidden rounded-xl bg-cream-soft ring-1 ring-border-warm/40 transition-transform duration-300 group-hover/m:-translate-y-0.5">
+                              <div className="aspect-square overflow-hidden rounded-none bg-paper ring-1 ring-ink/10 transition-all duration-200 group-hover/m:-translate-y-0.5 group-hover/m:ring-ink/40">
                                 {it.image && (
                                   <img src={it.image} alt="" loading="lazy" className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover/m:scale-110" />
                                 )}
