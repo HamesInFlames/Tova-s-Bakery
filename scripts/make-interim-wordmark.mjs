@@ -5,7 +5,9 @@
 // TODO(phase 0): replace these traced SVGs with the clean vectors extracted
 // from BRAND_MANUAL_TOVA_S.pdf pages 5-7 (scripts/extract-brand-assets.py).
 //
-// Usage: node scripts/make-interim-wordmark.mjs
+// Usage: npm i -D potrace@2.1.1 && node scripts/make-interim-wordmark.mjs
+//        (potrace is installed on demand — its jimp chain carries audit noise,
+//        so it isn't kept in devDependencies; 2.1.1 is the audit-clean pin.)
 // Output: public/images/brand/
 //   logo-stacked-white.svg / logo-stacked-black.svg  (full lockup, version a)
 //   wordmark-white.svg / wordmark-black.svg          (TOVA'S only, version b)
